@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoctorCare</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+    <nav id="navigate">
+
+        <div class="wrapper">
+            <a class="logo" href="#home" style="text-decoration: none; color: rgb(0, 0, 0);">
+                <img src="assets/icon2.svg" alt="Logo">
+            </a>
+
+            <div class="menu" >
+                <ul>
+                    <li><a onclick="closeMenu()"  href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#about" href="#">Sobre</a></li>
+                </ul>
+                <a class="button" onclick="closeMenu()" href="#contact"> Agende sua Consulta</a>
+
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="30" height="30" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.2824 25H15.8426C15.6011 25.0001 15.3678 25.0844 15.1852 25.2375L9.28125 30V25H6.1875C5.914 25 5.65169 24.8946 5.4583 24.7071C5.2649 24.5196 5.15625 24.2652 5.15625 24V6C5.15625 5.73478 5.2649 5.48043 5.4583 5.29289C5.65169 5.10536 5.914 5 6.1875 5H26.8125C27.086 5 27.3483 5.10536 27.5417 5.29289C27.7351 5.48043 27.8438 5.73478 27.8438 6V19.5375C27.8417 19.6832 27.8072 19.8267 27.7427 19.9583C27.6782 20.0899 27.5851 20.2065 27.4699 20.3L21.9398 24.7625C21.7572 24.9156 21.5239 24.9999 21.2824 25V25Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21.6562 11V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.4688 11V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+                                <path
+                                    d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
+                                    fill="#ffffff" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <button aria-expanded="false" aria-label="Abrir Menu" onclick="openMenu()" class="open-menu">
+                <img style="width: 3.1rem;" src="assets/menubar.png" alt="">
+            </button>
+
+            <button aria-expanded="true" aria-label="Fechar Menu" onclick="closeMenu()" class="close-menu">
+                <img style="width: 2.8rem;" src="assets/exit.png" alt="">
+            </button>
+
+        </div>
+
+    </nav>
+
+    <section id="home">
+
+        <div class="wrapper">
+
+            <div class="col-a">
+                <header>
+                    <h4>BOAS-VINDAS A DOCTORCARE </h4>
+                    <h1>Assistência médica simplificada para todos</h1>
+                </header>
+                <div class="content">
+                    <p>
+                        Olá! Eu sou o Tussamba, mais conhecido como Tjay Fernandes, sou Programador & Desenvolvedor Web, 
+                        caso queiras de Site, Blog ou Portifólio contacta-me já.
+                    </p>
+                    <a class="button" href="https://wa.me/+244926026046" target="_blank">
+                        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        AGENDA SUA CONSULTA
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-b">
+                <img src="./assets/mulher.png" alt="Uma mulher sorrindo" />
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h3>+3.500</h3>
+                    <p>Pacientes Atendidos</p>
+                </div>
+                <div class="stat">
+                    <h3>+15</h3>
+                    <p>Especialistas Disponíveis</p>
+                </div>
+                <div class="stat">
+                    <h3>+10</h3>
+                    <p>Anos no Mercado</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h4>Serviços</h4>
+                <h2>Como podemos <br>
+                    ajudá-lo a se sentir <br>
+                    melhor?</h2>
+
+                <div class="cards">
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok.png" alt="">
+                        <h3>Problemas Digestivos</h3>
+                        <div class="content">
+                            <p>
+                                Os principais sinais de problemas no sistema digestivo envolvem uma variedade de
+                                sintomas: perda de peso sem razão aparente, dor ou cólicas no abdômen, náuseas e
+                                vômitos, inchaço, queimação estomacal, azia, constipação, entre outros.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok.png" alt="">
+                        <h3>Saúde Hormonal</h3>
+                        <div class="content">
+                            <p>O desequilíbrio hormonal prejudica a saúde e acaba com o bem-estar. Os malefícios são
+                                diversos, indo da irritação ao rápido ganho de peso. Em relação às doenças, as
+                                alterações hormonais podem tanto ser a causa como a consequência de inúmeras patologias
+                                — que, muitas vezes, passam anos despercebidas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok.png" alt="">
+                        <h3>Bem-estar Mental</h3>
+                        <div class="content">
+                            <p>De acordo com a Organização Mundial de Saúde, o bem-estar mental é definido como “um
+                                estado de bem-estar em que o indivíduo percebe as suas próprias capacidades, pode lidar
+                                com as tensões normais da vida, trabalhar de forma produtiva e frutuosa, e é capaz de
+                                dar um contributo para a sua comunidade” </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok.png" alt="">
+                        <h3>Cuidados Pediátricos</h3>
+                        <div class="content">
+                            <p>O objetivo dos cuidados paliativos em pacientes pediátricos com câncer é melhorar o
+                                bem-estar do paciente e de sua família ao longo da doença, bem como reduzir o sofrimento
+                                físico, emocional e espiritual.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok.png" alt="">
+                        <h3>Autoimune e Inflamação</h3>
+                        <div class="content">
+                            <p>Um sinal comum da doença autoimune é a inflamação, que se manifesta através de
+                                vermelhidão, calor localizado, dor e inchaço. Os sintomas destas doenças podem ser
+                                influenciados por diversos fatores, ambiente e estado de saúde geral.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img style="width: 3rem;" src="assets/ok.png" alt="">
+                        <h3>Saúde do Coração</h3>
+                        <div class="content">
+                            <p>
+                                O coração é o músculo mais importante do corpo. A cada batida ele fornece alimento e
+                                oxigênio às células. Um coração saudável é a chave para um corpo saudável, e seu coração
+                                precisa de exercícios para mantê-lo em forma. Caminhar é um dos melhores modos de
+                                manter-se em forma.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="content">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+
+        <div class="wrapper">
+            <div class="col-a">
+                <header>
+                    <h4>SOBRE NÓS</h4>
+                    <h2>Entenda quem somos e por que existimos</h2>
+                </header>
+                <div class="content">
+                    <p>
+                        Contribuir para a obtenção de ganhos de saúde em articulação com os cuidados de saúde primários
+                        e
+                        com o setor social e privado; Garantir a humanização dos cuidados e os direitos dos utentes;
+                        Melhorar o acesso e a adequação da oferta de serviços; Melhorar a eficiência técnica e
+                        económica;
+                        Melhorar a qualidade dos cuidados e da organização dos serviços; Valorizar o capital humano.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-b">
+                <img src="./assets/doctor2.png" alt="Um Doctor feliz">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+
+            <div class="col-a">
+                <header>
+                    <h2>Entre em contacto com a gente</h2>
+                </header>
+        <div class="content">
+             <ul>
+
+                    <li>
+                        <svg width="23" height="23" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z"
+                                stroke="#9400d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Tjay_DEV
+                    </li>
+
+                    <li>
+                        <svg width="23" height="23" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
+                                stroke="#9400d3" stroke-width="2" stroke-miterlimit="10" />
+                            <path
+                                d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
+                                stroke="#9400d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
+                                fill="#9400d3" />
+                        </svg>
+                        tussamba_fernando
+                    </li>
+                </ul>
+
+                <a class="button" href="https://wa.me/+244926026046" target="_blank">
+                    <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Agente sua consulta
+                </a>
+        </div>
+            </div>
+
+           
+         <div class="col-b">
+                <img src="./assets/homem.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="wrapper">
+
+         <div class="col-a">
+             <p style="color: rgb(4, 202, 202);">Doctor<strong>Care</strong></p>
+            <p>
+                ttjaydev@gmail.com <br>
+               &copy; Copy Right, Desenvolvido por: 
+               <br> Tjay Fernandes/2024
+
+   
+            </p>
+         </div>
+           
+
+         <div class="col-b">
+
+            <ul class="social-links">
+                <li>
+                    <a target="_blank" href="https://wa.me/+244926026046" target="_blank">
+                        <svg width="30" height="30" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.2824 25H15.8426C15.6011 25.0001 15.3678 25.0844 15.1852 25.2375L9.28125 30V25H6.1875C5.914 25 5.65169 24.8946 5.4583 24.7071C5.2649 24.5196 5.15625 24.2652 5.15625 24V6C5.15625 5.73478 5.2649 5.48043 5.4583 5.29289C5.65169 5.10536 5.914 5 6.1875 5H26.8125C27.086 5 27.3483 5.10536 27.5417 5.29289C27.7351 5.48043 27.8438 5.73478 27.8438 6V19.5375C27.8417 19.6832 27.8072 19.8267 27.7427 19.9583C27.6782 20.0899 27.5851 20.2065 27.4699 20.3L21.9398 24.7625C21.7572 24.9156 21.5239 24.9999 21.2824 25V25Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21.6562 11V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15.4688 11V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/+244926026046" target="_blank">
+                        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/+244926026046" target="_blank">
+                        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
+                                stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" />
+                            <path
+                                d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
+                                fill="#ffffff" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+</div>
+    </footer>
+
+    <a id="back" href="#home"><img src="assets/de-volta-ao-topo.png" alt=""></a>
+
+    <script src="scrollreveal.js"></script>
+    <script src="./main.js"> </script>
+
+</body>
+
+</html>
